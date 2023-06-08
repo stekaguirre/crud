@@ -1,0 +1,65 @@
+
+<!--
+
+CARPETA EN HTDOCS ....... PRUEBA
+BASE DE DATOS............DATOS
+TABLA DE LA BASE DE DATOS..REGISTROS
+ID
+NOMBRE
+USUARIO
+CONTRASEÑA
+-->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./styles.css/style.css">
+</head>
+<body>
+    <header>
+        <div>
+            <nav>
+                <a href="index.html">home</a>
+                <a href="mostrar.php">mostrar</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="sectionregistro">
+            <form class="formulario" action="registro.php" method="POST">
+                
+                    <div class="tituloform">
+                        <h2>registro de usuario</h2>
+                    </div>
+                    
+                    <div class="nombrediv">
+                        <label for="formnombre" class="labelnombre" >nombre completo</label>
+                        <input type="text" class="inputnombre" name="txtnombre">
+                    </div>
+                    <div class="usuariodiv">
+                        <label for="formusuario" class="labelusuario" >elige tu usuario </label>
+                        <input type="text" class="inputusuario" name="txtusuario">
+                    </div>
+                    <div class="contraseñadiv">
+                        <label for="formcontraseña" class="labelcontraseña" >contraseña    </label>
+                        <input type="number" class="inputcontraseña" name="txtcontraseña">
+                    </div>
+                    <button class="buttonform" type="submit" >enviar</button>
+                
+            </form>
+            
+        </section>
+    </main>
+    <footer>y este es el footer</footer>
+    
+</body>
+</html>
+

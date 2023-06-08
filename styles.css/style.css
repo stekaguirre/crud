@@ -1,0 +1,130 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+
+
+header {
+    display: grid;
+    background-color: yellow;
+    width: 100%;
+    height: 40px;
+    justify-items: center;
+    align-content: center;
+    
+}
+
+
+
+
+
+
+main {   
+    background-color: black;
+}
+
+
+.sectionregistro{
+    display: grid;
+    background-color: rgb(99, 94, 168);
+    width: 100%;
+    min-width: 320px;
+    height: 400px;
+    align-content: center;
+    justify-content: center;
+}
+
+
+.formulario {
+    display: grid;
+    background-color: aqua; 
+    width: 80%;
+    height: 300px; 
+    padding: 10px;
+    justify-items: center;
+    justify-self: center;
+}
+
+
+.tituloform {
+    display: grid;
+    background-color: black;
+    color: white;
+    width: 100%;
+    justify-content: center;
+    align-content: center;   
+}
+
+.nombrediv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: 30px;
+    margin-top: 40px;
+}
+.labelnombre {
+    display: grid;
+    width: 100%;
+    background-color: blue; 
+    align-content: center;
+    justify-items: center;
+    
+}
+.inputnombre {
+    width: 100%;
+    background-color: blueviolet;  
+}
+
+.usuariodiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: 30px;
+}
+.labelusuario {
+    display: grid;
+    width: 100%;
+    background-color: blue; 
+    align-content: center;
+    justify-items: center;
+}
+.inputusuario {
+    width: 100%;
+    background-color: blueviolet;  
+}
+
+
+.contraseñadiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: 30px;
+}
+.labelcontraseña {
+    display: grid;
+    width: 100%;
+    background-color: blue; 
+    align-content: center;
+    justify-items: center;
+}
+.inputcontraseña {
+    width: 100%;
+    background-color: blueviolet;  
+}
+
+.buttonform {
+    width: 80px;
+    height: 40px;
+    background-color: dimgrey;
+}
+
+
+
+
+
+footer {
+    background-color: red;
+}
