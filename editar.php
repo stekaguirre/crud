@@ -28,15 +28,15 @@ include ('bd.php');
 
         
             <?php
-            $ID=$_GET["ID"];
-            $sql="SELECT * FROM registros WHERE id='$ID'";
+            $id=$_GET["id"];
+            $sql="SELECT * FROM registros WHERE id='$id'";
             $result=mysqli_query($conexion , $sql);
             while ($mostrar=mysqli_fetch_array($result)){
 
             
             ?>
 
-            <form action="procesar-editar.php" method="$_POST">
+            <form action="procesar-editar.php" method="POST">
                 <input type="hidden" value="<?php echo $mostrar ['id']?>" name="txtid">
                 <p>nombre</p>
                 <input type="text" value="<?php echo $mostrar ['nombre']?>" name="txtnombre">

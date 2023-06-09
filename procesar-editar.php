@@ -3,13 +3,17 @@
 include ('bd.php');
 
 
-$ID=$_POST['txtid'];
-$NOMBRE=$_POST['txtnombre'];
-$USUARIO=$_POST['txtusuario'];
-$CONTRASEÑA=$_POST['txtcontraseña'];
+$id=$_POST['txtid'];
+$nombre=$_POST['txtnombre'];
+$usuario=$_POST['txtusuario'];
+$contraseña=$_POST['txtcontraseña'];
 
-mysqli_query($conexion,"UPDATE `registros` SET `nombre` = '$NOMBRE',
-`usuario` = '$USUARIO', `contraseña` = '$CONTRASEÑA' WHERE `ID` = '$id'");
+mysqli_query($conexion,
+"UPDATE `registros` SET 
+`nombre` = '$nombre',
+`usuario` = '$usuario',
+`contraseña` = '$contraseña'
+WHERE `id` = '$id'");
 mysqli_close($conexion);
 header("location:mostrar.php");
 ?>

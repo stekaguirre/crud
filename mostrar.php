@@ -59,7 +59,7 @@ include ('bd.php');
                    
                     <td>
                                 <!--editar-->
-                        <a href="editar.php?ID=<?php echo $mostrar['id']?>">editar</a>        
+                        <a href="editar.php?id=<?php echo $mostrar['id']?>">editar</a>        
 
                                 <!--eliminar-->
                         <form action="eliminar.php" method="post">
