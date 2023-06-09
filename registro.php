@@ -9,8 +9,9 @@ $nombre=$_POST['txtnombre'];
 $usuario=$_POST['txtusuario'];
 $contraseña=$_POST['txtcontraseña'];
 
-$consulta="INSERT INTO `registros` (`nombre`, `usuario`, `contraseña`) VALUES ('$nombre', '$usuario', '$contraseña');
-";
+$consulta="INSERT INTO `registros` 
+(`nombre`, `usuario`, `contraseña`) VALUES 
+('$nombre', '$usuario', '$contraseña');";
 
 
 $resultado=mysqli_query($conexion,$consulta) or die ("error de registro");
