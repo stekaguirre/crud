@@ -33,11 +33,12 @@ CONTRASEÑA
         </div>
     </header>
     <main>
+
         <section class="sectionregistro">
             <form class="formulario" action="registro.php" method="POST">
                 
                     <div class="tituloform">
-                        <h2>registro de usuario</h2>
+                        <h2>REGISTRARSE</h2>
                     </div>
                     
                     <div class="nombrediv">
@@ -57,6 +58,28 @@ CONTRASEÑA
             </form>
             
         </section>
+        
+        <section class="sectionlogin">
+            <form class="formulariologin" action="validar.php" method="POST">
+                
+                    <div class="tituloformlogin">
+                        <h2>INGRESAR</h2>
+                    </div>
+                    
+                    <div class="usuariodivlogin">
+                        <label for="formusuario" class="labelusuariologin" >ingresa tu usuario </label>
+                        <input type="text" class="inputusuariologin" name="txtusuario">
+                    </div>
+                    <div class="contraseñadivlogin">
+                        <label for="formcontraseña" class="labelcontraseñalogin" >contraseña    </label>
+                        <input type="number" class="inputcontraseñalogin" name="txtcontraseña">
+                    </div>
+                    <button class="buttonformlogin" type="submit" >enviar</button>
+                
+            </form>
+            
+        </section>
+
     </main>
     <footer>y este es el footer</footer>
     

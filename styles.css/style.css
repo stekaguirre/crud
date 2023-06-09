@@ -124,6 +124,94 @@ main {
 
 
 
+/*section login*/
+
+.sectionlogin{
+    display: grid;
+    background-color: rgb(168, 94, 94);
+    width: 100%;
+    min-width: 320px;
+    height: 400px;
+    align-content: center;
+    justify-content: center;
+}
+
+
+.formulariologin {
+    display: grid;
+    background-color: rgb(161, 25, 202); 
+    width: 80%;
+    height: 300px; 
+    padding: 10px;
+    justify-items: center;
+    justify-self: center;
+}
+
+
+.tituloformlogin {
+    display: grid;
+    background-color: black;
+    color: white;
+    width: 100%;
+    justify-content: center;
+    align-content: center;   
+}
+
+.usuariodivlogin {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: 30px;
+    margin-top: 30px;
+}
+.labelusuariologin {
+    display: grid;
+    width: 100%;
+    background-color: rgb(185, 212, 29); 
+    align-content: center;
+    justify-items: center;
+}
+.inputusuariologin {
+    width: 100%;
+    background-color: rgb(226, 101, 43);  
+}
+
+
+.contraseñadivlogin {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: 30px;
+}
+.labelcontraseñalogin {
+    display: grid;
+    width: 100%;
+    background-color: rgb(189, 233, 33); 
+    align-content: center;
+    justify-items: center;
+}
+.inputcontraseñalogin {
+    width: 100%;
+    background-color: rgb(219, 114, 15);  
+}
+
+.buttonformlogin {
+    width: 80px;
+    height: 40px;
+    background-color: rgb(60, 23, 224);
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 footer {
     background-color: red;
