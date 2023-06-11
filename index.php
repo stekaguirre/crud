@@ -1,3 +1,10 @@
+<?php
+
+include ('bd.php');
+
+
+
+?>
 
 <!--
 
@@ -9,6 +16,8 @@ NOMBRE
 USUARIO
 CONTRASEÑA
 -->
+
+
 
 
 
@@ -27,7 +36,7 @@ CONTRASEÑA
     <header>
         <div>
             <nav>
-                <a href="index.html">home</a>
+                <a href="index.php">home</a>
                 <a href="mostrar.php">mostrar</a>
             </nav>
         </div>
@@ -43,15 +52,15 @@ CONTRASEÑA
                     
                     <div class="nombrediv">
                         <label for="formnombre" class="labelnombre" >nombre completo</label>
-                        <input type="text" class="inputnombre" name="txtnombre">
+                        <input type="text" class="inputnombre" name="txtnombre"placeholder="&#129333;nombre">
                     </div>
                     <div class="usuariodiv">
                         <label for="formusuario" class="labelusuario" >elige tu usuario </label>
-                        <input type="text" class="inputusuario" name="txtusuario">
+                        <input type="text" class="inputusuario" name="txtusuario"placeholder="&#128273;usuario">
                     </div>
                     <div class="contraseñadiv">
                         <label for="formcontraseña" class="labelcontraseña" >contraseña    </label>
-                        <input type="number" class="inputcontraseña" name="txtcontraseña">
+                        <input type="number" class="inputcontraseña" name="txtcontraseña" placeholder="&#128274;contraseña">
                     </div>
                     <button class="buttonform" type="submit" >enviar</button>
                 
@@ -60,21 +69,22 @@ CONTRASEÑA
         </section>
         
         <section class="sectionlogin">
-            <form class="formulariologin" action="validar.php" method="POST">
+            <form class="formulariologin" action="validar.php" method="post">
                 
                     <div class="tituloformlogin">
                         <h2>INGRESAR</h2>
                     </div>
                     
                     <div class="usuariodivlogin">
-                        <label for="formusuario" class="labelusuariologin" >ingresa tu usuario </label>
-                        <input type="text" class="inputusuariologin" name="txtusuario">
+                        <input type="text" class="inputusuariologin" name="txtusuario" placeholder="&#128273;  usuario">
                     </div>
                     <div class="contraseñadivlogin">
-                        <label for="formcontraseña" class="labelcontraseñalogin" >contraseña    </label>
-                        <input type="number" class="inputcontraseñalogin" name="txtcontraseña">
+                        <input type="number" class="inputcontraseñalogin" name="txtcontraseña" placeholder="&#128274;  contraseña">
                     </div>
-                    <button class="buttonformlogin" type="submit" >enviar</button>
+                    <div class="divbutton">
+                         <button class="buttonformlogin" name="btnlogin" type="submit" >enviar</button>
+                    </div>
+                    
                 
             </form>
             

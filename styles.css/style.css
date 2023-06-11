@@ -75,7 +75,8 @@ main {
 }
 .inputnombre {
     width: 100%;
-    background-color: blueviolet;  
+    background-color: rgb(247, 245, 248); 
+    text-align: center; 
 }
 
 .usuariodiv {
@@ -93,7 +94,8 @@ main {
 }
 .inputusuario {
     width: 100%;
-    background-color: blueviolet;  
+    background-color: rgb(252, 251, 253);  
+    text-align: center;
 }
 
 
@@ -112,7 +114,8 @@ main {
 }
 .inputcontraseña {
     width: 100%;
-    background-color: blueviolet;  
+    background-color: rgb(252, 250, 253);  
+    text-align: center;
 }
 
 .buttonform {
@@ -126,7 +129,7 @@ main {
 
 /*section login*/
 
-.sectionlogin{
+section.sectionlogin{
     display: grid;
     background-color: rgb(168, 94, 94);
     width: 100%;
@@ -140,8 +143,9 @@ main {
 .formulariologin {
     display: grid;
     background-color: rgb(161, 25, 202); 
-    width: 80%;
-    height: 300px; 
+    width: 100%;
+    min-width: 250px;
+    height: 250px; 
     padding: 10px;
     justify-items: center;
     justify-self: center;
@@ -159,40 +163,36 @@ main {
 
 .usuariodivlogin {
     display: grid;
-    grid-template-columns: 1fr 1fr;
     width: 100%;
     height: 30px;
-    margin-top: 30px;
-}
-.labelusuariologin {
-    display: grid;
-    width: 100%;
-    background-color: rgb(185, 212, 29); 
-    align-content: center;
+    align-self: center;
     justify-items: center;
 }
+
 .inputusuariologin {
-    width: 100%;
-    background-color: rgb(226, 101, 43);  
+    width: 80%;
+    background-color: rgb(255, 253, 252);
+    text-align: center;  
 }
 
 
 .contraseñadivlogin {
     display: grid;
-    grid-template-columns: 1fr 1fr;
     width: 100%;
     height: 30px;
-}
-.labelcontraseñalogin {
-    display: grid;
-    width: 100%;
-    background-color: rgb(189, 233, 33); 
-    align-content: center;
+    align-self: center;
     justify-items: center;
 }
+
 .inputcontraseñalogin {
-    width: 100%;
-    background-color: rgb(219, 114, 15);  
+    width: 80%;
+    background-color: rgb(252, 250, 249); 
+    text-align: center; 
+}
+
+.divbutton {
+    display: grid;
+    align-items: end;
 }
 
 .buttonformlogin {

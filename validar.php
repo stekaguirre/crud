@@ -1,29 +1,24 @@
 <?php
+
+include ('bd.php');
+
 $usuario=$_POST['txtusuario'];
 $contraseña=$_POST['txtcontraseña'];
 
-session_start();
 
-$_SESSION['txtusuario']=$usuario;
+if (isset($_POST ["btnlogin"]))
 
-include('bd.php');
+$query =mysqli_query($conexion,"SELECT * FROM registros WHERE usuario='$usuario' AND contraseña='$contraseña'");
+$nr =mysqli_num_rows($query);
 
-$consulta="SELECT FROM 'registros' WHERE usuario='$usuario' and contraseña='$contraseña'";
-
-$resultado=mysqli_query($conexion,$consulta);
-
-$filas=mysqli_num_rows($resultado);
-
-if ($filas){
+if ($nr==1)
+{
+    echo "<script> alert ('bienvenido $usuario');</script>"; 
     header("location:home.php");
-
-}else{
-    ?>
-    <?php
-    include("index.html");
-    ?>
-    <h1>error en la autentificacion</h1>
-    <?php
+}else
+{
+    echo "<script> alert ('usuario no existe');</script>"; 
+    header("location:index.php");
 }
-mysqli_free_result($resultado);
-mysqli_close($conexion);
+
+?>
