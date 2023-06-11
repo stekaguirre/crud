@@ -14,7 +14,7 @@ include ('bd.php');
     <header>
         <div>
             <nav>
-                <a href="index.html">home</a>
+                <a href="index.php">home</a>
                 <a href="mostrar.php">mostrar</a>
             </nav>
         </div>

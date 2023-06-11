@@ -20,5 +20,6 @@ echo "    registro exitoso";
 
 mysqli_close($conexion);
 
+header("location:index.php");
 
 ?>
